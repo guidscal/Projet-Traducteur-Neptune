@@ -186,7 +186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6102835341687124412}
   m_Layer: 0
-  m_Name: Marker-2
+  m_Name: Marqueur2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
