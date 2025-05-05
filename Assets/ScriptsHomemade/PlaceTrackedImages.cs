@@ -8,6 +8,7 @@ using UnityEngine.XR.ARSubsystems;
 public class PlaceTrackedImages : MonoBehaviour {
     // Reference to AR tracked image manager component
     private ARTrackedImageManager _trackedImagesManager;
+    [SerializeField] float sizeMultiply;
 
     // List of prefabs to instantiate - these should be named the same
     // as their corresponding 2D images in the reference image library 
@@ -46,6 +47,13 @@ public class PlaceTrackedImages : MonoBehaviour {
                       && !_instantiatedPrefabs.ContainsKey(imageName)) {
 	              // Instantiate the prefab, parenting it to the ARTrackedImage
                       var newPrefab = Instantiate(curPrefab, trackedImage.transform);
+                      double xScale = newPrefab.transform.localScale.x;
+                      xScale = xScale * sizeMultiply;
+                      double yScale = newPrefab.transform.localScale.y;
+                      yScale = yScale * sizeMultiply;
+                      double zScale = newPrefab.transform.localScale.z;
+                      zScale = zScale * sizeMultiply;
+                      newPrefab.transform.localScale = new Vector3((float)xScale, (float)yScale, (float)zScale);
 		      // Add the created prefab to our array
                       _instantiatedPrefabs[imageName] = newPrefab;
                   }
