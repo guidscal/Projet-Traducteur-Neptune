@@ -3,12 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using UnityEngine.UI;
+using TMPro;
 
 [RequireComponent(typeof(ARTrackedImageManager))]
 public class PlaceTrackedImages : MonoBehaviour {
     // Reference to AR tracked image manager component
     private ARTrackedImageManager _trackedImagesManager;
-    [SerializeField] float sizeMultiply;
+    public float sizeMultiply;
+    public float offsetDown;
+    public Slider downSlider;
+    public Slider scaleSlider;
+    public TextMeshProUGUI downOutputText;
+    public TextMeshProUGUI scaleOutputText;
+    public GameObject debugMenu;
+
 
     // List of prefabs to instantiate - these should be named the same
     // as their corresponding 2D images in the reference image library 
@@ -33,6 +42,21 @@ public class PlaceTrackedImages : MonoBehaviour {
      }
     
      // Event Handler
+
+    public void toggleDebugMenu(){
+        if(debugMenu.activeInHierarchy){
+            debugMenu.SetActive(false);
+        }else{
+            debugMenu.SetActive(true);
+        }
+    }
+
+     public void sliderUpdate(){
+        offsetDown = downSlider.value;
+        downOutputText.text = offsetDown.ToString();
+        sizeMultiply = scaleSlider.value;
+        scaleOutputText.text = sizeMultiply.ToString();
+     }
      private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs) {
 
 	  // Loop through all new tracked images that have been detected
@@ -54,6 +78,7 @@ public class PlaceTrackedImages : MonoBehaviour {
                       double zScale = newPrefab.transform.localScale.z;
                       zScale = zScale * sizeMultiply;
                       newPrefab.transform.localScale = new Vector3((float)xScale, (float)yScale, (float)zScale);
+                      newPrefab.transform.position = new Vector3(newPrefab.transform.position.x, newPrefab.transform.position.y * offsetDown, newPrefab.transform.position.z);
 		      // Add the created prefab to our array
                       _instantiatedPrefabs[imageName] = newPrefab;
                   }

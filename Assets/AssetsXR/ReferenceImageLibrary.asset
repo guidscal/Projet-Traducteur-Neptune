@@ -57,3 +57,13 @@ MonoBehaviour:
     m_SpecifySize: 0
     m_Name: HuitNeptuneBGBlanc
     m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4747143315930245953
+      m_GuidHigh: 7653985917654262941
+    m_SerializedTextureGuid:
+      m_GuidLow: 3802231706842166358
+      m_GuidHigh: 692509065005969880
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: HuitNoBG
+    m_Texture: {fileID: 0}
