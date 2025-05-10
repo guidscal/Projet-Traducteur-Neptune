@@ -67,3 +67,23 @@ MonoBehaviour:
     m_SpecifySize: 0
     m_Name: HuitNoBG
     m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5178005370131420593
+      m_GuidHigh: 5213389256015253679
+    m_SerializedTextureGuid:
+      m_GuidLow: 10418064494496663587
+      m_GuidHigh: 18079094146862806027
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: HuitMostBG
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5323818783959216822
+      m_GuidHigh: 15773287397795174580
+    m_SerializedTextureGuid:
+      m_GuidLow: 15867354372236728758
+      m_GuidHigh: 7913240773344666699
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: HuitCenterBG
+    m_Texture: {fileID: 0}
