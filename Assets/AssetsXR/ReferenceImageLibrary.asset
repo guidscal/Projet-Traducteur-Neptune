@@ -18,26 +18,6 @@ MonoBehaviour:
     m_Storage: []
   m_Images:
   - m_SerializedGuid:
-      m_GuidLow: 5643819331902704599
-      m_GuidHigh: 1664727905771924133
-    m_SerializedTextureGuid:
-      m_GuidLow: 10792003232553568755
-      m_GuidHigh: 8918699307590382730
-    m_Size: {x: 0, y: 0}
-    m_SpecifySize: 0
-    m_Name: Marqueur1
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
-      m_GuidLow: 5310080435613552303
-      m_GuidHigh: 15917660082502654878
-    m_SerializedTextureGuid:
-      m_GuidLow: 10954115882009609518
-      m_GuidHigh: 16667459804725760026
-    m_Size: {x: 0, y: 0}
-    m_SpecifySize: 0
-    m_Name: Marqueur2
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
       m_GuidLow: 5699612596035982789
       m_GuidHigh: 1122197409055327406
     m_SerializedTextureGuid:
@@ -58,32 +38,12 @@ MonoBehaviour:
     m_Name: HuitNeptuneBGBlanc
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
-      m_GuidLow: 4747143315930245953
-      m_GuidHigh: 7653985917654262941
+      m_GuidLow: 4976227303004824196
+      m_GuidHigh: 2197284617238500759
     m_SerializedTextureGuid:
       m_GuidLow: 3802231706842166358
       m_GuidHigh: 692509065005969880
-    m_Size: {x: 0, y: 0}
-    m_SpecifySize: 0
+    m_Size: {x: 1, y: 1.87473}
+    m_SpecifySize: 1
     m_Name: HuitNoBG
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
-      m_GuidLow: 5178005370131420593
-      m_GuidHigh: 5213389256015253679
-    m_SerializedTextureGuid:
-      m_GuidLow: 10418064494496663587
-      m_GuidHigh: 18079094146862806027
-    m_Size: {x: 0, y: 0}
-    m_SpecifySize: 0
-    m_Name: HuitMostBG
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
-      m_GuidLow: 5323818783959216822
-      m_GuidHigh: 15773287397795174580
-    m_SerializedTextureGuid:
-      m_GuidLow: 15867354372236728758
-      m_GuidHigh: 7913240773344666699
-    m_Size: {x: 0, y: 0}
-    m_SpecifySize: 0
-    m_Name: HuitCenterBG
     m_Texture: {fileID: 0}
